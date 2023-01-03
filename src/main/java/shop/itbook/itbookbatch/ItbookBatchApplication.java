@@ -7,9 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ItbookBatchApplication {
 
     public static void main(String[] args) {
-        System.out.println("hello");
-        System.out.println("please");
-        System.out.println("PULL REQUEST TEST");
+        System.out.println("Jenkins 배포");
         SpringApplication.run(ItbookBatchApplication.class, args);
     }
 
