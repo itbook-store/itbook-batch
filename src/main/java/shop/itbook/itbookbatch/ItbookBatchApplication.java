@@ -13,6 +13,7 @@ public class ItbookBatchApplication {
         System.out.println("제발 되게 해주세요 제발요 please");
         System.out.println("제발 되게 해주세요 제발요 please");
         System.out.println("제발 되게 해주세요 제발요ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ please");
+        System.out.println("제발 되게 해주세요 제발요ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ please");
         SpringApplication.run(ItbookBatchApplication.class, args);
     }
 }
