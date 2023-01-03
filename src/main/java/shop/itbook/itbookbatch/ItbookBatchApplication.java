@@ -9,6 +9,7 @@ public class ItbookBatchApplication {
     public static void main(String[] args) {
         System.out.println("hello");
         System.out.println("please");
+        System.out.println("PULL REQUEST TEST");
         SpringApplication.run(ItbookBatchApplication.class, args);
     }
 
