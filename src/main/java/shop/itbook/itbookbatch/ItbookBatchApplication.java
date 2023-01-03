@@ -8,6 +8,7 @@ public class ItbookBatchApplication {
 
     public static void main(String[] args) {
         System.out.println("hello");
+        System.out.println("please");
         SpringApplication.run(ItbookBatchApplication.class, args);
     }
 
