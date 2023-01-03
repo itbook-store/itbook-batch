@@ -9,7 +9,13 @@ public class ItbookBatchApplication {
     public static void main(String[] args) {
         System.out.println("Jenkins 배포");
         System.out.println("제발 되게 해주세요 제발요 please");
+        System.out.println("제발 되게 해주세요 제발요 please");
+        System.out.println("제발 되게 해주세요 제발요 please");
+        System.out.println("제발 되게 해주세요 제발요 please");
+        System.out.println("제발 되게 해주세요 제발요 please");
+        System.out.println("제발 되게 해주세요 제발요 please");
+        System.out.println("제발 되게 해주세요 제발요 please");
+        System.out.println("제발 되게 해주세요 제발요 please");
         SpringApplication.run(ItbookBatchApplication.class, args);
     }
-
 }
