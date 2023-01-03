@@ -19,6 +19,7 @@ public class ItbookBatchApplication {
         System.out.println("제발 되게 해주세요 제발요ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ please");
         System.out.println("제발 되게 해주세요 제발요ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ please");
         System.out.println("제발 되게 해주세요 제발요ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ please");
+        System.out.println("gogogogogogogogogogogogo");
         SpringApplication.run(ItbookBatchApplication.class, args);
     }
 }
