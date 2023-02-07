@@ -25,6 +25,7 @@ public class BatchConfig {
      */
     @Bean
     public BeanPostProcessor jobRegistryBeanPostProcessor() {
+
         JobRegistryBeanPostProcessor jobRegistryBeanPostProcessor =
                 new JobRegistryBeanPostProcessor();
         jobRegistryBeanPostProcessor.setJobRegistry(jobRegistry);
