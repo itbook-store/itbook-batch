@@ -1,5 +1,7 @@
 package shop.itbook.itbookbatch.grade.membershippoint.config;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 import javax.sql.DataSource;
@@ -46,7 +48,7 @@ public class PointHistorySavingStepConfig {
     @JobScope
     public Step pointHistorySavingStep() throws Exception {
 
-        return stepBuilderFactory.get("회원등급별 point_history 등록 step")
+        return stepBuilderFactory.get("회원등급별 point_history 등록 step_" +  LocalDateTime.now())
             .allowStartIfComplete(true)
             .<PointHistorySavePrepareDto, PointHistorySavePrepareDto>chunk(CHUNK_SIZE)
             .reader(getPointHistorySaveDtoListReader())
