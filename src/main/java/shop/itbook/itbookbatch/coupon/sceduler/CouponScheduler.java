@@ -24,7 +24,7 @@ import shop.itbook.itbookbatch.grade.membershippoint.exception.GradePointProvide
 public class CouponScheduler {
     private final JobLauncher jobLauncher;
     private final BirthdayCouponProvidingJobConfig birthdayCouponProvidingJobConfig;
-    @Scheduled(cron = "25 14 * * * *")
+    @Scheduled(cron = "0 0 * * * *")
     public void doBirthdayCouponProviding() throws Exception {
         Job job = birthdayCouponProvidingJobConfig.birthdayCouponProvidingJob();
         JobParameters jobParameters = new JobParameters();
