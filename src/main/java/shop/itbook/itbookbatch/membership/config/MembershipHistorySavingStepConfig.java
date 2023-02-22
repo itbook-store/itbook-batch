@@ -77,7 +77,7 @@ public class MembershipHistorySavingStepConfig {
 
         queryProviderFactoryBean.setDataSource(shopDataSource);
 
-        queryProviderFactoryBean.setSelectClause("SELECT m.member_no, ifnull((select membership_no from membership where membership_standard_amount < sum(op.amount) order by membership_standard_amount desc limit 1), 2029), ifnull(sum(op.amount), 0) ");
+        queryProviderFactoryBean.setSelectClause("SELECT m.member_no as memberNo, ifnull((select membership_no from membership where membership_standard_amount < sum(op.amount) order by membership_standard_amount desc limit 1), 2029) as membershipNo, ifnull(sum(op.amount), 0) as monthlyUsageAmount ");
         queryProviderFactoryBean.setFromClause("FROM member as m left outer join order_paper_member as opm on m.member_no = opm.member_no left outer join order_paper as op on opm.order_no = op.order_no ");
         queryProviderFactoryBean.setWhereClause("where op.order_created_at is null or (op.order_created_at > LAST_DAY(NOW() - interval 2 month) + interval 1 Day)");
         queryProviderFactoryBean.setGroupClause("group by m.member_no ");
